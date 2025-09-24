@@ -1,0 +1,9 @@
+client_investments = [400000, 45000, 60000]
+client_returns = []
+for x in client_investments:
+    client_returns.append(1.08*x)
+print(client_returns)
+
+
+client_returns = [1.08*x for x in client_investments]
+print(client_returns)
