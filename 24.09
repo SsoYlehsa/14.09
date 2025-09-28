@@ -1,0 +1,11 @@
+#Define a lambda function that calculates the effective interest rate given the annual interest rate and the number of 
+#compounding periods.
+#(10000*1+(6/12)^12)-1
+#Effective_rate = ((1 + (Interest/Period per year)) ^ Period per year) − 1
+#((1+(x/y))^y)-1
+#Assume you deposited USD10,000 today into an account paying 6% compounded monthly. What is the expected effective rate of return?
+#How much interest you would have earned by the end of the year?
+inte = lambda x, y: ((1+(x/y))**y)-1
+result1 = inte(.06, 12)
+result =result1*10000
+print(result)
